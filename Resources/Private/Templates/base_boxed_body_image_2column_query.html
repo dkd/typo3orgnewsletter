@@ -61,12 +61,12 @@
 			* @style heading 1
 			*/
 			h1{
-				/*@editable*/ color:#202020 !important;
+				/*@editable*/ color:#E98538 !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:26px;
 				/*@editable*/ font-style:normal;
-				/*@editable*/ font-weight:bold;
+				/*@editable*/ font-weight:normal;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
 				margin-top:0;
@@ -83,12 +83,12 @@
 			* @style heading 2
 			*/
 			h2{
-				/*@editable*/ color:#404040 !important;
+				/*@editable*/ color:#000000 !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:20px;
+				/*@editable*/ font-size:24px;
 				/*@editable*/ font-style:normal;
-				/*@editable*/ font-weight:bold;
+				/*@editable*/ font-weight:normal;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
 				margin-top:0;
@@ -105,11 +105,11 @@
 			* @style heading 3
 			*/
 			h3{
-				/*@editable*/ color:#606060 !important;
+				/*@editable*/ color:#000000 !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:16px;
-				/*@editable*/ font-style:italic;
+				/*@editable*/ font-size:22px;
+				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
@@ -127,11 +127,11 @@
 			* @style heading 4
 			*/
 			h4{
-				/*@editable*/ color:#808080 !important;
+				/*@editable*/ color:#000000 !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:14px;
-				/*@editable*/ font-style:italic;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
@@ -151,8 +151,8 @@
 			* @theme header
 			*/
 			#templatePreheader{
-				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				background-color:#E98538;
+				border-bottom:1px solid #CCCCCC;
 			}
 
 			/**
@@ -161,7 +161,7 @@
 			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 			*/
 			.preheaderContent{
-				/*@editable*/ color:#808080;
+				/*@editable*/ color:#fff;
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:125%;
@@ -174,7 +174,7 @@
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
 			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#606060;
+				/*@editable*/ color:#fff;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -234,9 +234,7 @@
 			* @tip Set the background color and borders for your email's body area.
 			*/
 			#templateBody{
-				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				background-color:#FFFFFF;
 			}
 
 			/**
@@ -284,7 +282,7 @@
 			* @tip Set the background color and borders for your email's column area.
 			*/
 			#templateColumns{
-				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
 				/*@editable*/ border-bottom:1px solid #CCCCCC;
 			}
@@ -360,8 +358,7 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
+				background-color:#3F3F3F;
 			}
 
 			/**
@@ -371,7 +368,7 @@
 			* @theme footer
 			*/
 			.footerContent{
-				/*@editable*/ color:#808080;
+				color:#FFFFFF;
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:150%;
@@ -388,9 +385,9 @@
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
 			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
-				/*@editable*/ color:#606060;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				color:#FFFFFF;
+				font-weight:normal;
+				text-decoration:underline;
 			}
 
 			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
@@ -568,8 +565,8 @@
                                 	<!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-                                                Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;">
+                                                &nbsp;
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                             <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
@@ -587,7 +584,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="/typo3conf/ext/typo3org_newsletter/Resources/Public/Images/header.png" style="max-width:600px;" id="headerImage" alt="typo3.org" />
                                             </td>
                                         </tr>
                                     </table>
@@ -614,7 +611,7 @@
                                             <td valign="top" class="bodyContent" mc:edit="body_content01">
                                                 <h2>Styling Your Content</h2>
                                                 <h4>Make your email easy to read</h4>
-                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style. 
+                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.
                                             </td>
                                         </tr>
                                     </table>
@@ -683,7 +680,7 @@
                                                 <br />
                                                 <strong>Our mailing address is:</strong>
                                                 <br />
-                                                *|HTML:LIST_ADDRESS_HTML|* *|END:IF|* 
+                                                *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
                                             </td>
                                         </tr>
                                         <tr>
