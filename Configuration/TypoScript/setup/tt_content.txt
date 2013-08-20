@@ -4,6 +4,15 @@ tt_content {
 			renderMethod = table
 		}
 	}
+
+
+	stdWrap.innerWrap.cObject.default {
+		5 = TEXT
+		5.value = <tr><td valign="top" class="bodyContent">
+
+		35 = TEXT
+		35.value = </td></tr>
+	}
 }
 
 plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >

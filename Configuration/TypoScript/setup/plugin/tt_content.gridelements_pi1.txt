@@ -1,0 +1,28 @@
+lib.gridelements.defaultGridSetup.columns.default.renderObj.20 < tt_content
+
+tt_content.gridelements_pi1.20.10.setup {
+	# gridelements ID
+	twoColumns < lib.gridelements.defaultGridSetup
+	twoColumns {
+		columns {
+			default {
+				renderObj.20.stdWrap.innerWrap.cObject.default.5 >
+				renderObj.20.stdWrap.innerWrap.cObject.default.35 >
+			}
+
+			# column ID
+			1 < .default
+			1 {
+				wrap = <table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer"><tr><td valign="top" class="leftColumnContent" > | </td></tr></table>
+			}
+
+			# column ID
+			2 < .default
+			2 {
+				wrap = <table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer"><tr><td valign="top" class="rightColumnContent" > | </td></tr></table>
+			}
+
+			wrap = <table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateColumns"><tr><td align="left" valign="top" style="padding-bottom:0;"> | </td></tr></table>
+		}
+	}
+}

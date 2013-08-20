@@ -4,3 +4,38 @@ mod.SHARED.colPos_list = 0,3
 TCEFORM {
 	tt_content.colPos.keepItems = 0,3
 }
+
+
+# gridelements for 2 col
+tx_gridelements {
+	# TS Elemente haben Vorrang vor Datensätzen mit gleichen IDs
+	overruleRecords = 1
+	setup {
+		# identification of the gridelements
+		twoColumns {
+			title = 2 columns
+			description = 2 column content elements
+			topLevelLayout = 1
+			config {
+				colCount = 2
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+							1 {
+								name = left column
+								colPos = 1
+								allowed = image
+							}
+							2 {
+								name = right column
+								colPos = 2
+								allowed = image
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

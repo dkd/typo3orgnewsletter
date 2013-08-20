@@ -6,6 +6,8 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.footerSocialMedia.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.events.txt">
 
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/plugin/tt_content.gridelements_pi1.txt">
+
 page = PAGE
 page {
 
@@ -25,6 +27,7 @@ page {
 		workOnSubpart = DOC_BODY
 		subparts {
 
+			CONTENT < styles.content.get
 			EVENTS < lib.events
 
 			COPYRIGHT < lib.copyright
