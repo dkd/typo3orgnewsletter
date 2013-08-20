@@ -8,10 +8,25 @@ tt_content {
 
 	stdWrap.innerWrap.cObject.default {
 		5 = TEXT
-		5.value = <tr><td valign="top" class="bodyContent">
+		5 {
+			value = <tr><td valign="top" class="bodyContent">
+			if {
+				value.field = colPos
+				equals = 3
+				negate = 1
+			}
+		}
+
 
 		35 = TEXT
-		35.value = </td></tr>
+		35 {
+			value = </td></tr>
+			if {
+				value.field = colPos
+				equals = 3
+				negate = 1
+			}
+		}
 	}
 }
 
