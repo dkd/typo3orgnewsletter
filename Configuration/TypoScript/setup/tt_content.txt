@@ -12,8 +12,7 @@ tt_content {
 			value = <tr><td valign="top" class="bodyContent">
 			if {
 				value.field = colPos
-				equals = 3
-				negate = 1
+				equals = 0
 			}
 		}
 
@@ -23,8 +22,7 @@ tt_content {
 			value = </td></tr>
 			if {
 				value.field = colPos
-				equals = 3
-				negate = 1
+				equals = 0
 			}
 		}
 	}
