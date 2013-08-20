@@ -18,4 +18,7 @@ lib.footerSocialMedia {
 			parameter = https://www.facebook.com/typo3
 		}
 	}
+
+	30 = TEXT
+	30.value = <br /><br />
 }

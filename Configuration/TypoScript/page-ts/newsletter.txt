@@ -1,2 +1,6 @@
 # show only normal column
-mod.SHARED.colPos_list = 0
+mod.SHARED.colPos_list = 0,3
+
+TCEFORM {
+	tt_content.colPos.keepItems = 0,3
+}

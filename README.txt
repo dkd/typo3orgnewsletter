@@ -18,3 +18,6 @@ Todo:
 * css_styled_content
 * Direct Mail Content Boundaries (direct_mail)
 * Direct Mail Plain Text (direct_mail)
+
+PS:
+# column Border is the event in the footer

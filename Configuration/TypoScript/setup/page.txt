@@ -4,6 +4,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.copyright.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.footerLogo.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.footerSocialMedia.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.events.txt">
 
 page = PAGE
 page {
@@ -23,6 +24,8 @@ page {
 		template.file = {$global.template}
 		workOnSubpart = DOC_BODY
 		subparts {
+
+			EVENTS < lib.events
 
 			COPYRIGHT < lib.copyright
 			FOOTER_LOGO < lib.footerLogo

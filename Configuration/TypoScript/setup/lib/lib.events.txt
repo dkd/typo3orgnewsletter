@@ -1,0 +1,6 @@
+lib.events = COA
+lib.events {
+	10 = TEXT
+	10.value = Upcoming Events:<br />
+	20 < styles.content.getBorder
+}
