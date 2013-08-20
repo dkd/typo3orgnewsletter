@@ -1,0 +1,9 @@
+tt_content {
+	image {
+		20 {
+			renderMethod = table
+		}
+	}
+}
+
+plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >

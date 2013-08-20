@@ -1,0 +1,2 @@
+# show only normal column
+mod.SHARED.colPos_list = 0

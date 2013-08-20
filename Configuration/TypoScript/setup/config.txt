@@ -1,0 +1,5 @@
+config {
+	removeDefaultJS = 1
+	inlineStyle2TempFile = 0
+	doctype = xhtml_trans
+}

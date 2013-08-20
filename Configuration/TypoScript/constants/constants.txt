@@ -1,0 +1,6 @@
+global {
+	template = EXT:typo3org_newsletter/Resources/Private/Templates/base_boxed_body_image_2column_query.html
+	footer {
+		address = TYPO3 Association <br /> Sihlbruggstrasse 105 <br /> 6340 Baar <br /> Switzerland
+	}
+}

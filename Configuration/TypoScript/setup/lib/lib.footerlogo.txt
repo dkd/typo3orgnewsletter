@@ -1,0 +1,37 @@
+lib.footerLogo = COA
+lib.footerLogo {
+	10 = IMAGE
+	10 {
+		file = EXT:typo3org_newsletter/Resources/Public/Images/logo_typo3.png
+		altText = TYPO3 CMS
+		titleText = TYPO3 CMS
+		stdWrap.typolink {
+			parameter = http://www.typo3.org/
+		}
+	}
+
+	15 = TEXT
+	15.value = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	20 = IMAGE
+	20 {
+		file = EXT:typo3org_newsletter/Resources/Public/Images/logo_flow.png
+		altText = TYPO3 FLOW
+		titleText = TYPO3 FLOW
+		stdWrap.typolink {
+			parameter = http://flow.typo3.org/
+		}
+	}
+
+	25 < .15
+
+	30 = IMAGE
+	30 {
+		file = EXT:typo3org_newsletter/Resources/Public/Images/logo_neos.png
+		altText = TYPO3 NEOS
+		titleText = TYPO3 NEOS
+		stdWrap.typolink {
+			parameter = http://neos.typo3.org/
+		}
+	}
+}
