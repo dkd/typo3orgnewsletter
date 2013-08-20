@@ -2,7 +2,8 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/tt_content.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.copyright.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.footerlogo.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.footerLogo.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.footerSocialMedia.txt">
 
 page = PAGE
 page {
@@ -25,6 +26,7 @@ page {
 
 			COPYRIGHT < lib.copyright
 			FOOTER_LOGO < lib.footerLogo
+			FOOTER_SOCIAL_MEDIA < lib.footerSocialMedia
 		}
 	}
 

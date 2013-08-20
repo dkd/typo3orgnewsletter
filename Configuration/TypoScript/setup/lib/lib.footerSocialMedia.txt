@@ -1,0 +1,21 @@
+lib.footerSocialMedia = COA
+lib.footerSocialMedia {
+	10 = TEXT
+	10 {
+		value = Follow on twitter
+		typolink {
+			parameter = https://twitter.com/typo3
+		}
+	}
+
+	15 = TEXT
+	15.value = &nbsp;&nbsp;&nbsp;
+
+	20 = TEXT
+	20 {
+		value = Friend on Facebook
+		typolink {
+			parameter = https://www.facebook.com/typo3
+		}
+	}
+}
