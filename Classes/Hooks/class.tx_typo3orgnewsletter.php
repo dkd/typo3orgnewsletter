@@ -18,7 +18,7 @@ class tx_typo3orgnewsletter {
 
 	/**
 	 * This method is called by the frontend rendering hook contentPostProc-output
-	 * 
+	 *
 	 * @param $content
 	 * @param $pObj
 	 */
@@ -50,7 +50,6 @@ class tx_typo3orgnewsletter {
 
 		$cssToInlineStyles = new CssToInlineStyles();
 
-		$cssToInlineStyles->setCleanup();
 		$cssToInlineStyles->setHTML($html);
 		$cssToInlineStyles->setCSS($css);
 
