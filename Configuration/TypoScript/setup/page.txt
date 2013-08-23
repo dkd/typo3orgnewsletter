@@ -20,6 +20,10 @@ page {
 		}
 	}
 
+	includeCSS {
+		10 = typo3conf/ext/typo3org_newsletter/Resources/Public/Stylesheets/styles.css
+	}
+
 	10 = TEMPLATE
 	10 {
 		template = FILE
