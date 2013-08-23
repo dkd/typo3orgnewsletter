@@ -7,7 +7,7 @@ Todo:
 2. Create a new template in the SysFolder and set following:
 2.1 Constant
 <pre>
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/constant/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/constants/constants.txt">
 </pre>
 2.2 Setup
 <pre>

@@ -32,7 +32,9 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '1.0.0',
 	'constraints' => array(
 		'depends' => array(
-			'gridelements' => '',
+			'gridelements' => '0.0.0-1.4.99',
+			'php' => '5.3.0-5.3.99',
+			'typo3' => '4.5.0-4.5.99',
 		),
 		'conflicts' => array(
 		),
