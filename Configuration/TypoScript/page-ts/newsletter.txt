@@ -39,3 +39,34 @@ tx_gridelements {
 		}
 	}
 }
+
+# direct_mail config
+
+mod.web_modules.dmail {
+	priority = 3
+	sendOptions = 3
+	includeMedia = 1
+	flowedFormat = 0
+	plainParams = &type=99
+	use_domain = 1
+	quick_mail_encoding = quoted-printable
+	direct_mail_encoding = quoted-printable
+	quick_mail_charset = utf-8
+	direct_mail_charset = iso-8859-1
+	use_rdct = 0
+	long_link_mode = 1
+	enable_jump_url = 1
+	enable_mailto_jump_url = 0
+	jumpurl_tracking_privacy = 0
+
+	/**
+	 * following need to be set manually
+	 */
+	from_email = info@typo3.org
+	from_name = TYPO3.org
+	replyto_email = info@typo3.org
+	replyto_name = TYPO3.org
+	return_path = noreply@typo3.org
+	test_tt_address_uids =
+	test_dmail_group_uids =
+}
