@@ -1,0 +1,13 @@
+lib.preheaderText = COA
+lib.preheaderText {
+	10 = TEXT
+	10 {
+		value = Email not displaying correctly?
+		wrap = |<br />
+	}
+	20 = TEXT
+	20 {
+		value = View it in your browser.
+		typolink.parameter.field = uid
+	}
+}
