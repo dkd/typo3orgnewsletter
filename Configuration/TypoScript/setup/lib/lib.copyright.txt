@@ -1,13 +1,30 @@
 lib.copyright = COA
 lib.copyright {
-	10 = TEXT
+	10 = COA
 	10 {
-		date = Y
-		wrap = <em>Copyright &copy;&nbsp;|&nbsp;TYPO3 Association</em>
+		5 = TEXT
+		5 {
+			value = {$global.footer.copyright.prepend}
+		}
+		10 = TEXT
+		10 {
+			date = Y
+			wrap = &nbsp;|&nbsp;
+		}
+		15 = TEXT
+		15 {
+			value = {$global.footer.copyright.append}
+		}
+
+		wrap = <em>|</em>
 	}
 
+
 	20 = TEXT
-	20.value = <br /><br /><strong>Our mailing address is:</strong><br />
+	20 {
+		value = {$global.footer.addressHeader}
+		wrap =  <br /><br /><strong>|</strong><br />
+	}
 
 	30 = TEXT
 	30.value = {$global.footer.address}

@@ -1,6 +1,9 @@
 lib.events = COA
 lib.events {
 	10 = TEXT
-	10.value = Upcoming Events:<br />
+	10 {
+		value = {$global.footer.eventsHeader}
+		wrap = | <br />
+	}
 	20 < styles.content.getBorder
 }

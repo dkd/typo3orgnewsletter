@@ -2,11 +2,11 @@ lib.footerLogo = COA
 lib.footerLogo {
 	10 = IMAGE
 	10 {
-		file = EXT:typo3org_newsletter/Resources/Public/Images/logo_typo3.png
-		altText = TYPO3 CMS
-		titleText = TYPO3 CMS
+		file = {$global.footer.logo.1.image}
+		altText = {$global.footer.logo.1.altTitle}
+		titleText = {$global.footer.logo.1.altTitle}
 		stdWrap.typolink {
-			parameter = http://www.typo3.org/
+			parameter = {$global.footer.logo.1.link}
 		}
 	}
 
@@ -15,11 +15,11 @@ lib.footerLogo {
 
 	20 = IMAGE
 	20 {
-		file = EXT:typo3org_newsletter/Resources/Public/Images/logo_flow.png
-		altText = TYPO3 FLOW
-		titleText = TYPO3 FLOW
+		file = {$global.footer.logo.2.image}
+		altText = {$global.footer.logo.2.altTitle}
+		titleText = {$global.footer.logo.2.altTitle}
 		stdWrap.typolink {
-			parameter = http://flow.typo3.org/
+			parameter = {$global.footer.logo.2.link}
 		}
 	}
 
@@ -27,11 +27,11 @@ lib.footerLogo {
 
 	30 = IMAGE
 	30 {
-		file = EXT:typo3org_newsletter/Resources/Public/Images/logo_neos.png
-		altText = TYPO3 NEOS
-		titleText = TYPO3 NEOS
+		file = {$global.footer.logo.3.image}
+		altText = {$global.footer.logo.3.altTitle}
+		titleText = {$global.footer.logo.3.altTitle}
 		stdWrap.typolink {
-			parameter = http://neos.typo3.org/
+			parameter = {$global.footer.logo.3.link}
 		}
 	}
 }

@@ -2,9 +2,9 @@ lib.footerSocialMedia = COA
 lib.footerSocialMedia {
 	10 = TEXT
 	10 {
-		value = Follow on twitter
+		value = {$global.footer.socialMedia.1.text}
 		typolink {
-			parameter = https://twitter.com/typo3
+			parameter = {$global.footer.socialMedia.1.link}
 		}
 	}
 
@@ -13,9 +13,9 @@ lib.footerSocialMedia {
 
 	20 = TEXT
 	20 {
-		value = Friend on Facebook
+		value = {$global.footer.socialMedia.2.text}
 		typolink {
-			parameter = https://www.facebook.com/typo3
+			parameter = {$global.footer.socialMedia.2.link}
 		}
 	}
 

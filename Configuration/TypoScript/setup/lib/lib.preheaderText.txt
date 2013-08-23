@@ -2,12 +2,12 @@ lib.preheaderText = COA
 lib.preheaderText {
 	10 = TEXT
 	10 {
-		value = Email not displaying correctly?
+		value = {$global.header.preheader.1}
 		wrap = |<br />
 	}
 	20 = TEXT
 	20 {
-		value = View it in your browser.
+		value = {$global.header.preheader.2}
 		typolink.parameter.field = uid
 	}
 }
