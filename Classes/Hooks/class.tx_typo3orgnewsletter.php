@@ -23,7 +23,7 @@ class tx_typo3orgnewsletter {
 	 * @param $pObj
 	 */
 	public function parseFE(&$content,$pObj) {
-		if ($pObj->tmpl->setup['config.']['tx_typo3org_newsletter.']['inlineCSS']) {
+		if ($pObj->tmpl->setup['config.']['tx_typo3org_newsletter.']['inlineCSS'] && ($pObj->type == 0) ) {
 			$content['pObj']->content = $this->parseContent($content['pObj']->content);
 		}
 

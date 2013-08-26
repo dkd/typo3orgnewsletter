@@ -8,6 +8,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.preheaderText.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/plugin/tt_content.gridelements_pi1.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/plugin/tx_directmail_pi1.txt">
 
 page = PAGE
 page {
