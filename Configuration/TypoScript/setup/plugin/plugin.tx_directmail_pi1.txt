@@ -1,0 +1,12 @@
+plugin.tx_directmail_pi1 {
+	bodytext.stdWrap.parseFunc.tags {
+		li = TEXT
+		li {
+			current = 1
+			debugFunc = 1
+			noTrimWrap = |# ||
+			append = TEXT
+			append.char = 10
+		}
+	}
+}
