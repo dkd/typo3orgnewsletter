@@ -70,3 +70,11 @@ mod.web_modules.dmail {
 	test_tt_address_uids =
 	test_dmail_group_uids =
 }
+
+# activating categories for FE-User
+TCEFORM.fe_users.module_sys_dmail_category.disabled = 0
+TCEFORM.sys_dmail_group.select_categories.disabled = 0
+
+# please set the pid_list
+TCEFORM.fe_users.module_sys_dmail_category.PAGE_TSCONFIG_IDLIST = pid_list
+TCEFORM.sys_dmail_group.select_categories.PAGE_TSCONFIG_IDLIST = pid_list
