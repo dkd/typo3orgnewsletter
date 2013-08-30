@@ -412,7 +412,8 @@ h6{
 * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
 * @theme footer
 */
-.footerContent{
+.footerContent,
+.footerContent .bodyContent {
 	color:#FFFFFF;
 	font-family:Helvetica;
 	font-size:10px;
