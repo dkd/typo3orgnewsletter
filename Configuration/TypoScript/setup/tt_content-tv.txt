@@ -1,0 +1,50 @@
+tt_content {
+	image {
+		20 {
+			renderMethod = table
+			noStretchAndMarginCells = 1
+		}
+	}
+
+	stdWrap.innerWrap.cObject.default {
+		5 = TEXT
+		5 {
+			value = <tr><td valign="top" class="bodyContent">
+			if {
+				value.field = CType
+				equals = templavoila_pi1
+				negate = 1
+			}
+		}
+
+		6 = TEXT
+		6 {
+			value = <tr><td valign="top" class="">
+			if {
+				value.field = CType
+				equals = templavoila_pi1
+			}
+		}
+
+		35 = TEXT
+		35 {
+			value = </td></tr>
+			if {
+				value.field = CType
+				equals = templavoila_pi1
+				negate = 1
+			}
+		}
+
+		36 = TEXT
+		36 {
+			value = </td></tr>
+			if {
+				value.field = CType
+				equals = templavoila_pi1
+			}
+		}
+	}
+}
+
+plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >

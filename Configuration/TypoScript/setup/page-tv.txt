@@ -1,5 +1,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/config.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/tt_content.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/tt_content-tv.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.copyright.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3org_newsletter/Configuration/TypoScript/setup/lib/lib.footerLogo.txt">
