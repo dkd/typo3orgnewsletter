@@ -56,4 +56,26 @@ class tx_typo3orgnewsletter {
 		// convert them
 		return $cssToInlineStyles->convert();
 	}
+
+	/**
+	 * rendering plaintext for the gridelements
+	 * @param $pObj		the parent object from the tx_directmail_pi1
+	 * @param $content	the content, usually empty
+	 * @return array	array of the rendered content
+	 */
+	public function renderPlainText($pObj, $content) {
+		if ($pObj->cObj->data['CType'] == 'gridelements_pi1') {
+			$local_TS = array(
+				'select.' => array(
+					'pidInList' => $pObj->cObj->data['pid'],
+					'where' => ' tx_gridelements_container='.$pObj->cObj->data['uid']
+				),
+				'table' => 'tt_content',
+				'renderObj' => '< plugin.tx_directmail_pi1'
+			);
+			$renderedContent  = $pObj->cObj->cObjGetSingle('CONTENT',$local_TS);
+
+		}
+		return array($renderedContent );
+	}
 }

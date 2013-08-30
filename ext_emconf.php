@@ -32,13 +32,13 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '1.0.0',
 	'constraints' => array(
 		'depends' => array(
-			'gridelements' => '0.0.0-1.4.99',
 			'php' => '5.3.0-5.3.99',
 			'typo3' => '4.5.0-4.5.99',
 		),
 		'conflicts' => array(
 		),
 		'suggests' => array(
+			'gridelements' => '0.0.0-1.4.99',
 		),
 	),
 	'_md5_values_when_last_written' => 'a:5:{s:9:"ChangeLog";s:4:"09c6";s:12:"ext_icon.gif";s:4:"1bdc";s:10:"README.txt";s:4:"ee2d";s:19:"doc/wizard_form.dat";s:4:"68ed";s:20:"doc/wizard_form.html";s:4:"03c7";}',

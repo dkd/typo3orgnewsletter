@@ -10,5 +10,6 @@
 if (!defined ("TYPO3_MODE")) 	die ("Access denied.");
 
 $TYPO3_CONF_VARS['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-output'][] = 'EXT:typo3org_newsletter/Classes/Hooks/class.tx_typo3orgnewsletter.php:&tx_typo3orgnewsletter->parseFE';
+$TYPO3_CONF_VARS['EXTCONF']['direct_mail']['renderCType'][] = 'EXT:typo3org_newsletter/Classes/Hooks/class.tx_typo3orgnewsletter.php:&tx_typo3orgnewsletter';
 
 ?>
