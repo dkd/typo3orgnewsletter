@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<field_col1 type="array">
+				<tx_templavoila type="array">
+					<title>Left image</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>imagefixed</eType>
+					<TypoScript>10 = IMAGE
+						10.file.XY = 200,150
+						10.file.import = uploads/tx_templavoila/
+						10.file.import.current = 1
+						10.file.import.listNum = 0
+						10.file.maxW = 260</TypoScript>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Left image</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>file</internal_type>
+						<allowed>gif,png,jpg,jpeg</allowed>
+						<max_size>1000</max_size>
+						<uploadfolder>uploads/tx_templavoila</uploadfolder>
+						<show_thumbs>1</show_thumbs>
+						<size>1</size>
+						<maxitems>1</maxitems>
+						<minitems>0</minitems>
+					</config>
+				</TCEforms>
+			</field_col1>
+			<field_col2 type="array">
+				<tx_templavoila type="array">
+					<title>Right image</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>imagefixed</eType>
+					<TypoScript>10 = IMAGE
+						10.file.XY = 200,150
+						10.file.import = uploads/tx_templavoila/
+						10.file.import.current = 1
+						10.file.import.listNum = 0
+						10.file.maxW = 260</TypoScript>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Right image</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>file</internal_type>
+						<allowed>gif,png,jpg,jpeg</allowed>
+						<max_size>1000</max_size>
+						<uploadfolder>uploads/tx_templavoila</uploadfolder>
+						<show_thumbs>1</show_thumbs>
+						<size>1</size>
+						<maxitems>1</maxitems>
+						<minitems>0</minitems>
+					</config>
+				</TCEforms>
+			</field_col2>
+		</el>
+	</ROOT>
+</T3DataStructure>
