@@ -35,9 +35,9 @@
 					</sample_data>
 					<eType>ce</eType>
 					<TypoScript>
-10= RECORDS
-10.source.current=1
-10.tables = tt_content</TypoScript>
+						10= RECORDS
+						10.source.current=1
+						10.tables = tt_content</TypoScript>
 					<preview></preview>
 					<eType_EXTRA type="array">
 					</eType_EXTRA>
@@ -134,6 +134,22 @@
 					<TypoScriptObjPath>lib.footerLogo</TypoScriptObjPath>
 				</tx_templavoila>
 			</footerlogo>
+			<footerlink type="array">
+				<tx_templavoila type="array">
+					<title>Footer Link</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.footerlink</TypoScriptObjPath>
+				</tx_templavoila>
+			</footerlink>
 		</el>
 	</ROOT>
 </T3DataStructure>
