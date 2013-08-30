@@ -28,21 +28,11 @@ page {
 		10 = typo3conf/ext/typo3org_newsletter/Resources/Public/Stylesheets/styles.css
 	}
 
-	10 = TEMPLATE
-	10 {
-		template = FILE
-		template.file = {$global.template}
-		workOnSubpart = DOC_BODY
-		subparts {
-
-			PREHEADER_TEXT < lib.preheaderText
-			CONTENT < styles.content.get
-			EVENTS < lib.events
-
-			COPYRIGHT < lib.copyright
-			FOOTER_LOGO < lib.footerLogo
-			FOOTER_SOCIAL_MEDIA < lib.footerSocialMedia
-		}
-	}
+	10 = USER
+	10.userFunc = tx_templavoila_pi1->main_page
 
 }
+
+# remove default css
+plugin.tx_cssfilelist._CSS_DEFAULT_STYLE >
+plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >

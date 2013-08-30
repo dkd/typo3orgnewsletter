@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>0</langDisable>
+		<langChildren>1</langChildren>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<headertext type="array">
+				<tx_templavoila type="array">
+					<title>PreHeader Text</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.preheaderText</TypoScriptObjPath>
+				</tx_templavoila>
+			</headertext>
+			<content type="array">
+				<tx_templavoila type="array">
+					<title>Main Content</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript>
+10= RECORDS
+10.source.current=1
+10.tables = tt_content</TypoScript>
+					<preview></preview>
+					<eType_EXTRA type="array">
+					</eType_EXTRA>
+					<enableDragDrop type="integer">1</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Main Content</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</content>
+			<footerleft type="array">
+				<tx_templavoila type="array">
+					<title>Footer Left</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>none</eType>
+					<TypoScript><![CDATA[10 = COA
+10 {
+	10 =< lib.footerSocialMedia
+	20 =< lib.copyright
+}]]></TypoScript>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+				</tx_templavoila>
+			</footerleft>
+			<events type="array">
+				<tx_templavoila type="array">
+					<title>Events footer</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<eType_EXTRA type="array">
+					</eType_EXTRA>
+					<TypoScript><![CDATA[10 = TEXT
+10 {
+	value = Upcoming Events:
+	wrap = <tr><td valign="top" class="">| </td></tr>
+}
+
+20= RECORDS
+20.source.current=1
+20.tables = tt_content]]></TypoScript>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>1</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Events footer</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</events>
+			<footerlogo type="array">
+				<tx_templavoila type="array">
+					<title>Footer Logo</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.footerLogo</TypoScriptObjPath>
+				</tx_templavoila>
+			</footerlogo>
+		</el>
+	</ROOT>
+</T3DataStructure>
