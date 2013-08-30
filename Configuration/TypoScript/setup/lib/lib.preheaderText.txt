@@ -8,6 +8,6 @@ lib.preheaderText {
 	20 = TEXT
 	20 {
 		value = {$global.header.preheader.2}
-		typolink.parameter.field = uid
+		typolink.parameter.data = TSFE:id
 	}
 }
